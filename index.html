@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test-首页</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  
+    <!-- Google web font "Open Sans" -->
+    
+    <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <!-- index style -->
+    <link rel="stylesheet" href="css/index.css">
+    <!--common style-->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- font style -->
+    <link rel="stylesheet" href="css/iconfont.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   		<![endif]-->
+</head>
+
+<body>
+	<!--==========================
+      header 
+    ============================-->
+	<header class="header-navigation">
+		<div class="row">
+			<div class="col-sm-8">
+				<nav> 
+					<a class="link" href="#" title="首页">首页</a> 
+					<a class="link" href="#" title="关于我们">关于我们</a> 
+					<a class="link" href="#" title="联系我们">联系我们</a>
+				</nav>
+			</div>
+			<div class="col-sm-4">
+				<nav> 
+					<a class="link text-right denglu" href="#" title="登录">登录</a> 
+					<a class="link text-right zhuce" href="#" title="注册">注册</a> 
+				</nav>
+			</div>
+		</div>
+		
+	</header>
+	
+	<!--==========================
+      banner Section
+    ============================-->
+    <section>
+	    <div id="myCarousel" class="carousel slide" style="background-color: #fff;">
+			<!-- 轮播（Carousel）指标 -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>   
+			<!-- 轮播（Carousel）项目 -->
+			<div class="carousel-inner">
+				<div class="item active text-center">
+					<img src="img/banner1.jpg" alt="First slide">
+					<div class="item-text-group1">
+						<div class="item-theme">你的事，就是我的事</div>
+						<div class="item-text">
+							<p>优胜企业服务理念</p>
+						</div>
+						<a href="#" class="banner1-a">立即注册</a>
+					</div>
+				</div>
+				<div class="item text-center">
+					<img src="img/banner2.jpg" alt="Second slide">
+					<div class="item-text-group2">
+						<div class="item-theme">打造IT服务尖端品牌</div>
+						<div class="item-text">
+							<p>开拓市场</p>
+							<p>展现实力</p>
+						</div>
+						<a href="#" class="banner2-a">查看更多</a>
+					</div>
+				</div>
+			</div>
+			<!-- 轮播（Carousel）导航 -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <span class="iconfont icon-icon_on_the_left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <span class="iconfont icon-icon_on_the_right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			</a>
+		</div>
+
+	</section>
+	
+	<!--==========================
+      tab Section
+    ============================-->
+	<section>
+	  	<div id="tab-select">
+	  		<div class="col-sm-12">
+	  			<h3>为8万用户提供优质产品和服务</h3>
+	  		</div>
+	  		<div class="col-sm-12 text-center">
+	  			<ul class=" tab-select-nav">
+	  				<li data-content="描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述" data-original-title title>
+						<a href="javascript:navigate_tabs('tab-box1','first-tab');" class="tab-select-a" id="first-tab">
+							<i class="iconfont icon-icon"></i>
+							<h5>跨境周边产品</h5>
+						</a>
+					</li>
+					<li data-content="描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述" data-original-title title>
+						<a href="javascript:navigate_tabs('tab-box2','second-tab');" class="tab-select-a" id="second-tab">
+							<i class="iconfont icon-chanpinguanli"></i>
+							<h5>绿色专属服务</h5>
+						</a>
+					</li>
+					<li data-content="描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述" data-original-title title>
+						<a href="javascript:navigate_tabs('tab-box3','third-tab');" class="tab-select-a" id="third-tab">
+							<i class="iconfont icon-chakanwuliu"></i>
+							<h5>跨境物流服务</h5>
+						</a>
+					</li>
+				</ul>
+				<br style="clear:both;" />
+			</div>
+		</div>	
+				
+		<div id="tab_box">
+			<div class="container">
+	        	<div class="row">
+					<div class="tab-box1">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<a href="#" class="tab-box1-list">
+										<sup>￥24000.00</sup>
+										<div class="list-icon">
+											<img src="img/chanpin/chanpin1.jpg" />
+										</div>
+										<h5>德国VAT咨询</h5>
+									</a>
+									<div class="detail">
+										<a href="#" class="title">德国VAT咨询</a>
+										<p class="description">套餐内容：德国VAT税号/欧盟 税务识别号/欧盟海关EORI号码+全年12次VAT申报+1次年度增值税申报</p>
+										<a href="#" class="btn-more">查看更多</a>
+									</div>
+								</div>
+								
+							
+							</div>
+							
+						</div>
+					
+					</div>
+					<div class="tab-box2">
+						<div class="tab-box2-list">
+							<div class="col-sm-4">
+								<div class="row">
+									<div class="col-sm-12 tab-box2-list-item">
+										<div class="col-sm-6">
+											<div class="item-img">
+												<a href="#" class="item-img-link" >
+													<span></span>
+													<img src="img/chanpin/wish.jpg" />
+												</a>
+											</div>
+											</div>
+										<div class="col-sm-6 item-text">
+											<a href="" class=" item-title">绿色注册通道</a>
+											<a href="" class=" item-zhuce">立即注册</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="row">
+									<div class="col-sm-12 tab-box2-list-item">
+										<div class="col-sm-6">
+											<div class="item-img">
+												<a href="#" class="item-img-link" >
+													<span></span>
+													<img src="img/chanpin/wish.jpg" />
+												</a>
+											</div>
+											</div>
+										<div class="col-sm-6 item-text">
+											<a href="" class=" item-title">绿色注册通道</a>
+											<a href="" class=" item-zhuce">立即注册</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="row">
+									<div class="col-sm-12 tab-box2-list-item">
+										<div class="col-sm-6">
+											<div class="item-img">
+												<a href="#" class="item-img-link" >
+													<span></span>
+													<img src="img/chanpin/wish.jpg" />
+												</a>
+											</div>
+											</div>
+										<div class="col-sm-6 item-text">
+											<a href="" class=" item-title">绿色注册通道</a>
+											<a href="" class=" item-zhuce">立即注册</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="row">
+									<div class="col-sm-12 tab-box2-list-item">
+										<div class="col-sm-6">
+											<div class="item-img">
+												<a href="#" class="item-img-link" >
+													<span></span>
+													<img src="img/chanpin/wish.jpg" />
+												</a>
+											</div>
+											</div>
+										<div class="col-sm-6 item-text">
+											<a href="" class=" item-title">绿色注册通道</a>
+											<a href="" class=" item-zhuce">立即注册</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					
+					</div>
+					<div class="tab-box3">
+						<div class="tab-box2-list">
+							<div class="col-sm-6">
+								<div class="row">
+									<div class="col-sm-12 tab-box2-list-item">
+										<div class="col-sm-4">
+											<div class="item-img">
+												<a href="#" class="item-img-link" >
+													<span></span>
+													<img src="img/chanpin/wish.jpg" />
+												</a>
+											</div>
+											</div>
+										<div class="col-sm-8 item-text">
+											<a href="" class=" item-title">绿色注册通道</a>
+											<p class="item-description">为电商卖家、美国海外仓及物流货代公司提供全美全境超低价的尾程快递服务。支持在线、移动端和批量打单、API对接及多家第三方</p>
+											<a href="" class=" item-zhuce">立即注册</a>
+											<span class="item-date">有效期至:2018-04-24</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="row">
+									<div class="col-sm-12 tab-box2-list-item">
+										<div class="col-sm-4">
+											<div class="item-img">
+												<a href="#" class="item-img-link" >
+													<span></span>
+													<img src="img/chanpin/wish.jpg" />
+												</a>
+											</div>
+											</div>
+										<div class="col-sm-8 item-text">
+											<a href="" class=" item-title">绿色注册通道</a>
+											<p class="item-description">为电商卖家、美国海外仓及物流货代公司提供全美全境超低价的尾程快递服务。支持在线、移动端和批量打单、API对接及多家第三方</p>
+											<a href="" class=" item-zhuce">立即注册</a>
+											<span class="item-date">有效期至:2018-04-24</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="row">
+									<div class="col-sm-12 tab-box2-list-item">
+										<div class="col-sm-4">
+											<div class="item-img">
+												<a href="#" class="item-img-link" >
+													<span></span>
+													<img src="img/chanpin/wish.jpg" />
+												</a>
+											</div>
+											</div>
+										<div class="col-sm-8 item-text">
+											<a href="" class=" item-title">绿色注册通道</a>
+											<p class="item-description">为电商卖家、美国海外仓及物流货代公司提供全美全境超低价的尾程快递服务。支持在线、移动端和批量打单、API对接及多家第三方</p>
+											<a href="" class=" item-zhuce">立即注册</a>
+											<span class="item-date">有效期至:2018-04-24</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+				
+				</div>	
+			</div>
+		</div>
+
+	</section>
+	
+	<!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="row tg-topcategories">
+        	<div class="col-sm-4">
+        		<div class="col-sm-12">
+    				<div class="row">
+    					<div class="col-sm-12 tg-category">
+    						<figure>
+    							<img src="img/tg-category/01.jpg" alt="" />
+    							<figcaption class="tg-automotive">						
+	    							<a href="#">
+	    								<span class="tg-categoryname">
+	    									<h4>配件商城</h4>
+	    								</span>
+	    								<span class="tg-categoryicon ">
+	    									<i class="iconfont icon-jiahao "></i>
+	    								</span>
+	    								<p class="tg-description">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+	    								
+	    							</a>
+    							</figcaption>
+    						</figure>
+    					</div>
+		    			<div class="col-sm-12 tg-category">
+    						<figure>
+    							<img src="img/tg-category/02.jpg" alt="" />
+    							<figcaption class="tg-automotive">						
+	    							<a href="#">
+	    								<span class="tg-categoryname">
+	    									<h4>配件商城</h4>
+	    								</span>
+	    								<span class="tg-categoryicon ">
+	    									<i class="iconfont icon-jiahao "></i>
+	    								</span>
+	    								<p class="tg-description">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+	    								
+	    							</a>
+    							</figcaption>
+    						</figure>
+    					</div>
+		    		</div>
+		        </div>
+        	</div>
+        	
+			<div class="col-sm-4">
+        		<div class="col-sm-12">
+    				<div class="row">
+    					<div class="col-sm-12 tg-category">
+    						<figure>
+    							<img src="img/tg-category/02.jpg" alt="" />
+    							<figcaption class="tg-automotive">						
+	    							<a href="#">
+	    								<span class="tg-categoryname">
+	    									<h4>配件商城</h4>
+	    								</span>
+	    								<span class="tg-categoryicon ">
+	    									<i class="iconfont icon-jiahao "></i>
+	    								</span>
+	    								<p class="tg-description">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+	    								
+	    							</a>
+    							</figcaption>
+    						</figure>
+    					</div>
+		    			<div class="col-sm-12 tg-category">
+    						<figure>
+    							<img src="img/tg-category/01.jpg" alt="" />
+    							<figcaption class="tg-automotive">						
+	    							<a href="#">
+	    								<span class="tg-categoryname">
+	    									<h4>配件商城</h4>
+	    								</span>
+	    								<span class="tg-categoryicon ">
+	    									<i class="iconfont icon-jiahao "></i>
+	    								</span>
+	    								<p class="tg-description">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+	    								
+	    							</a>
+    							</figcaption>
+    						</figure>
+    					</div>
+		    		</div>
+		        </div>
+			</div>
+        	
+        	<div class="col-sm-4">
+        		<div class="col-sm-12">
+    				<div class="row">
+    					<div class="col-sm-12 tg-category">
+    						<figure>
+    							<img src="img/tg-category/01.jpg" alt="" />
+    							<figcaption class="tg-automotive">						
+	    							<a href="#">
+	    								<span class="tg-categoryname">
+	    									<h4>配件商城</h4>
+	    								</span>
+	    								<span class="tg-categoryicon ">
+	    									<i class="iconfont icon-jiahao "></i>
+	    								</span>
+	    								<p class="tg-description">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+	    								
+	    							</a>
+    							</figcaption>
+    						</figure>
+    					</div>
+		    			<div class="col-sm-12 tg-category">
+    						<figure>
+    							<img src="img/tg-category/02.jpg" alt="" />
+    							<figcaption class="tg-automotive">						
+	    							<a href="#">
+	    								<span class="tg-categoryname">
+	    									<h4>配件商城</h4>
+	    								</span>
+	    								<span class="tg-categoryicon ">
+	    									<i class="iconfont icon-jiahao "></i>
+	    								</span>
+	    								<p class="tg-description">简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介</p>
+	    								
+	    							</a>
+    							</figcaption>
+    						</figure>
+    					</div>
+		    		</div>
+		        </div>
+        	</div>
+        	
+        </div>
+      </div>
+    </section><!-- #team -->
+	
+	<!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>产品服务</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html">首页</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>关于我们</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">基本简介</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">加入我们</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>帮助支持</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">工具下载</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">快速注册</a></li>
+            </ul>
+          </div>
+		
+			<div class="col-lg-3 col-md-6 footer-info">
+            <h6>在线服务</h6>
+            <p><img src="img/zaixianfuwu.jpg"></p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Yuan Quan</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- #footer -->
+<a href="#" class="back-to-top"><i class="iconfont icon-fanhuidingbu"></i></a>
+	
+<!-- 客服部分 -->
+<div style="right:-230px;" class="contactusdiyou">
+	<div class="hoverbtn">
+		<span>联</span><span>系</span><span>我</span><span>们</span>
+		<img class="hoverimg" src="img/hoverbtnbg.gif" height="9" width="13">
+	</div>
+	<div class="conter">
+		<div class="con1"> 
+			<dl class="fn_cle">
+				<dt><img src="img/tel.png" height="31" width="31"></dt>
+				<dd class="f1">咨询热线：</dd>
+				<dd class="f2"><span class="ph_num">123456789</span></dd>
+			</dl>
+		</div> 
+		<div class="blank0"></div>
+		<div class="qqcall"> 
+			<dl class="fn_cle">
+				<dt><img src="img/zxkfqq.png" height="31" width="31"></dt>
+				<dd class="f1 f_s14">在线客服：</dd>
+				<dd class="f2 kefuQQ">
+					<span>客服一</span>
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456789&amp;site=qq&amp;menu=yes"></a>
+					<span>客服二</span>
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=123456789&amp;site=qq&amp;menu=yes"></a>
+				</dd>
+			</dl>
+			<div class="blank0"></div>           
+		</div> 
+		<div class="blank0"></div>
+		<div class="weixincall"> 
+			<dl class="fn_cle">
+				<dt><img src="img/weixin.png" height="31" width="31"></dt>
+				<dd class="f1">官方微信：</dd>
+				<dd class="f3"><img src="" height="73" width="73"></dd>
+			</dl>
+		</div> 
+		<div class="blank0"></div>
+		<div class="dytimer">
+			<span style="font-weight: bold;">企业官网：</span>
+			<span><a href="">www.baidu.com</a></span>
+		</div>
+	</div>
+</div>
+
+<div class="diyoumask" ></div>
+
+
+	
+	
+	
+    <!-- 调用JS -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>	
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>	
+    <script type="text/javascript" src="js/index.js"></script>	
+    <script type="text/javascript">
+	$(".tab-box1-list").hover(function() {
+		$(this).siblings('div').show();
+		$(this).parent().siblings('div').children('.detail').hide();
+	})
+    </script>
+    <script type="text/javascript">
+	$(function(){
+		$(".contactusdiyou").hover(function() {
+			$(".hoverimg").attr("src","img/hoverbtnbg1.gif");
+			$('.diyoumask').fadeIn();
+			$('.contactusdiyou').animate({right:'0'},300); 
+		}, function() {
+			$(".hoverimg").attr("src","img/hoverbtnbg.gif");
+			$('.contactusdiyou').animate({right:'-230px'},300,function(){});
+			$('.diyoumask').fadeOut();
+		});
+	});
+	$(function(){
+	$(".tab-select-nav li").popover({ trigger : "hover", container : "body", placement : "top" });
+	});
+</script>	
+</body>
+</html>
